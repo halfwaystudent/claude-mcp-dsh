@@ -1,0 +1,27 @@
+{
+  "dshVersion": "0.2.0-rc.1",
+  "dshRuntimeRoot": "%LOCALAPPDATA%\\dsh-runtime",
+  "readOnlyTempDir": "%LOCALAPPDATA%\\dsh-runtime\\ro-temp",
+  "expectedProvider": "commandcode",
+  "expectedModel": "deepseek/deepseek-v4.1-flash",
+  "allowedProviders": [
+    "commandcode"
+  ],
+  "projectRoot": "D:\\path\\to\\your-project",
+  "runsDir": "%TEMP%\\dsh-runs",
+  "defaultMode": "workspace-write",
+  "minFreeGB": 3.0,
+  "maxProcessGB": 4.0,
+  "heavyProcessPattern": "pytest|scratch",
+  "continueBelowTokens": 450000,
+  "hardLimitTokens": 780000,
+  "quietFilePattern": "scratch|cache|README|DESIGN",
+  "turnGuards": {
+    "steps": 400,
+    "repeats": 5
+  },
+  "maxTurnGuards": {
+    "steps": 3000,
+    "repeats": 50
+  }
+}

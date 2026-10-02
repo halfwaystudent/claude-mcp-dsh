@@ -1,0 +1,13 @@
+# Per-run model overlay for dsh headless. Passed with --patch; it never edits the user's profile.
+# Model: Command Code's DeepSeek V4.1 Flash (cheap channel the user wants).
+- id: agent-default-model
+  name: "@deepseek-ai/dsh-agent-default-model"
+  config:
+    provider: commandcode
+    model: deepseek/deepseek-v4.1-flash
+    reasoningEffort: high
+- id: llm-commandcode
+  name: "@mars-sea/dsh-commandcode-provider"
+  config:
+    apiKeyEnv: COMMANDCODE_API_KEY
+    showSidebarQuota: true

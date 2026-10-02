@@ -1,0 +1,12 @@
+# Model overlay for the dsh ACP profile (passed with --patch; never edits the user's profile).
+# The acp row ships hardwired to deepseek-official; switch it to Command Code DeepSeek V4.1 Flash.
+- id: acp
+  name: '@deepseek-ai/dsh-acp'
+  config:
+    provider: commandcode
+    model: deepseek/deepseek-v4.1-flash
+- id: llm-commandcode
+  name: "@mars-sea/dsh-commandcode-provider"
+  config:
+    apiKeyEnv: COMMANDCODE_API_KEY
+    showSidebarQuota: true
